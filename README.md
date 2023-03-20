@@ -1,4 +1,4 @@
-Mastermind en Python
+#Mastermind en Python
 Ce projet est une implémentation du jeu de plateau Mastermind en Python avec une interface graphique. Le joueur doit deviner un code secret formé de 4 pions de couleur alignés en au plus 10 essais de code. Les règles et les fonctionnalités du jeu sont décrites ci-dessous.
 
 -Fonctionnalités
