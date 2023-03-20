@@ -24,4 +24,4 @@ Installer les prérequis en exécutant la commande suivante : pip install pygame
 Lancer le jeu en exécutant la commande suivante : python main.py
 Suivre les instructions affichées à l'écran pour jouer.
 Auteur
-Ce projet a été réalisé par [votre nom].
+Ce projet a été réalisé par Enzo Boughanmi,... .
