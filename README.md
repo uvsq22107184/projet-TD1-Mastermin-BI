@@ -7,6 +7,6 @@
 <h2>Prérequis</h2>
 <ul><li>Python 3</li><li>Pygame</li></ul>
 <h2>Comment jouer</h2>
-<ol><li>Cloner ce dépôt en local.</li><li>Installer les prérequis en exécutant la commande suivante : <code>pip install pygame</code></li><li>Lancer le jeu en exécutant la commande suivante : <code>python main.py</code></li><li>Suivre les instructions affichées à l'écran pour jouer.</li></ol>
+<ol><li>Cloner ce dépôt en local. https://github.com/Akimizu26/projet-TD1-Mastermin-BI</li><li>Installer les prérequis en exécutant la commande suivante : <code>pip install pygame</code></li><li>Lancer le jeu en exécutant la commande suivante : <code>python main.py</code></li><li>Suivre les instructions affichées à l'écran pour jouer.</li></ol>
 <h2>Auteur</h2>
-<p>Ce projet a été réalisé par Enzo Boughanmi,... .</p>
+<p>Ce projet a été réalisé par Enzo Boughanmi,Vianney MOURLON au TD01 .</p>
