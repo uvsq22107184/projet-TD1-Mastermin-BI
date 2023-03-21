@@ -1,0 +1,57 @@
+import random
+import tkinter
+
+# Initialisation de Pygame
+pygame.init()
+
+# Définition de la taille de la fenêtre
+WIDTH = 400
+HEIGHT = 600
+
+# Définition des couleurs utilisées dans le jeu
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+
+# Définition des dimensions des boutons utilisés dans le jeu
+BUTTON_WIDTH = 40
+BUTTON_HEIGHT = 40
+BUTTON_GAP = 10
+
+# Définition du nombre de colonnes et de lignes dans la grille de jeu
+NUM_COLUMNS = 4
+NUM_ROWS = 10
+
+# Génération de la combinaison secrète
+def generate_secret_code():
+    colors = ['R', 'G', 'B', 'Y', 'P', 'O']
+    return random.sample(colors, NUM_COLUMNS)
+
+# Vérification de la réponse du joueur
+def check_guess(guess, secret_code):
+    correct_color = 0
+    correct_pos_color = 0
+    for i in range(NUM_COLUMNS):
+        if guess[i] == secret_code[i]:
+            correct_pos_color += 1
+        if guess[i] in secret_code:
+            correct_color += 1
+    correct_color -= correct_pos_color
+    return (correct_pos_color, correct_color)
+
+# Création de la grille de jeu
+def create_board():
+    board = []
+    for i in range(NUM_ROWS):
+        row = []
+        for j in range(NUM_COLUMNS):
+            row.append('.')
+        board.append(row)
+    return board
+
+# Affichage de la grille de jeu
+def draw_board(board, guess, secret_code, screen):
+    screen.fill(WHITE)
